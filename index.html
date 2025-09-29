@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BuyCoolStuff</title>
+    </head>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, red, yellow, green);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #title {
+            margin: 0;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            font-family: impact;
+            font-size: 300%;
+            color: #FFFFFF;
+            
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+            text-shadow: -5px 0 #000;
+
+            animation-name: scaler;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        #search_box {
+            margin: 0;
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 600px;
+            height: 25px;
+            border-radius: 15px;
+            
+            font-size: large;
+        }
+
+        @keyframes scaler {
+            0% {font-size: 300%}
+            100% {font-size: 350%}
+        }
+
+    </style>
+    <script>
+         function detectMob() {
+            const toMatch = [
+                /Android/i,
+                /webOS/i,
+                /iPhone/i,
+                /iPad/i,
+                /iPod/i,
+                /BlackBerry/i,
+                /Windows Phone/i
+            ];
+            
+            return toMatch.some((toMatchItem) => {
+                return navigator.userAgent.match(toMatchItem);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+        if (detectMob()) {
+            document.getElementById("search_box").style.width = "350px";
+            document.getElementById("search_box").style.top = "50%";
+        }
+    });
+
+    </script>
+    <body>
+        <div id="title">
+                <p>Buy Cool Stuff!</p>
+        </div>
+
+        <input id="search_box" type="search" placeholder="Search for stuff!">
+    </body>
+</html><!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BuyCoolStuff.com</title>
+    </head>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, red, yellow, green);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #title {
+            margin: 0;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            font-family: impact;
+            font-size: 300%;
+            color: #FFFFFF;
+            
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+            text-shadow: -5px 0 #000;
+
+            animation-name: scaler;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        #search_box {
+            margin: 0;
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 600px;
+            height: 25px;
+            border-radius: 15px;
+            
+            font-size: large;
+        }
+
+        @keyframes scaler {
+            0% {font-size: 300%}
+            100% {font-size: 350%}
+        }
+
+    </style>
+    <script>
+         function detectMob() {
+            const toMatch = [
+                /Android/i,
+                /webOS/i,
+                /iPhone/i,
+                /iPad/i,
+                /iPod/i,
+                /BlackBerry/i,
+                /Windows Phone/i
+            ];
+            
+            return toMatch.some((toMatchItem) => {
+                return navigator.userAgent.match(toMatchItem);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+        if (detectMob()) {
+            document.getElementById("search_box").style.width = "350px";
+            document.getElementById("search_box").style.top = "50%";
+        }
+    });
+
+    </script>
+    <body>
+        <div id="title">
+                <p>Buy Cool Stuff!</p>
+        </div>
+
+        <input id="search_box" type="search" placeholder="Search for stuff!">
+    </body>
+</html>
